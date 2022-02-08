@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="400" prefWidth="600"
+      fx:controller="eic.ifpr.pgua.relatorios.telas.Principal"
+      >
+
+    <padding>
+        <Insets right="10" left="10" bottom="10" top="10"/>
+    </padding>
+
+    <TableView fx:id="tbPessoas">
+        <columns>
+            <TableColumn text="ID" fx:id="tbcIdPessoa"/>
+            <TableColumn text="Nome" fx:id="tbcNomePessoa"/>
+            <TableColumn text="Nascimento" fx:id="tbcNascimentoPessoa"/>
+            <TableColumn text="Altura" fx:id="tbcAlturaPessoa"/>
+        </columns>
+    </TableView>
+    <Button text="Gerar Pdf" onAction="#gerarPdf"/>
+
+</VBox>
