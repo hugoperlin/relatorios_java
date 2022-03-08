@@ -62,6 +62,10 @@ public class Principal {
         try{
             
             FileChooser fc = new FileChooser();
+            FileChooser.ExtensionFilter fileExtensions = 
+  new FileChooser.ExtensionFilter("Arquivo PDF","*.pdf");
+            fc.getExtensionFilters().add(fileExtensions);
+            fc.setInitialFileName("*.pdf");
             File f = fc.showSaveDialog(null);
             
             if(f != null){
