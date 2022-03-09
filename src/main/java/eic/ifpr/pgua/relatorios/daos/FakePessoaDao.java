@@ -18,6 +18,8 @@ public class FakePessoaDao implements PessoaDao{
         lista.add(new Pessoa(3, "Maria", LocalDateTime.now().minusYears(20), 1.85));
         lista.add(new Pessoa(4, "Jão", LocalDateTime.now().minusYears(25), 1.55));
         
+        Thread.sleep(5000);
+
         return lista;
     }
     

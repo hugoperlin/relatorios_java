@@ -19,6 +19,8 @@
         <Insets right="10" left="10" bottom="10" top="10"/>
     </padding>
 
+    <StackPane>
+
     <TableView fx:id="tbPessoas">
         <columns>
             <TableColumn text="ID" fx:id="tbcIdPessoa"/>
@@ -27,6 +29,14 @@
             <TableColumn text="Altura" fx:id="tbcAlturaPessoa"/>
         </columns>
     </TableView>
-    <Button text="Gerar Pdf" onAction="#gerarPdf"/>
+    <ProgressIndicator fx:id="piProcessando" />
+        
+</StackPane>
+    
+    <HBox>
+        <Button fx:id="btGerar" text="Gerar Pdf" onAction="#gerarPdf"/>
+    </HBox>
+    
+
 
 </VBox>
