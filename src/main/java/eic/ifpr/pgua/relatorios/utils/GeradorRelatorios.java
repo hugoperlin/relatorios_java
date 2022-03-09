@@ -103,6 +103,13 @@ public class GeradorRelatorios {
         //adiciona a tabela no documento
         document.add(table);
 
+
+
+        Paragraph p2 = new Paragraph();
+        p2.add("blah blah blah!!!");
+
+        document.add(p2);
+
         //fecha o documento e salva em arquivo
         document.close();
 
